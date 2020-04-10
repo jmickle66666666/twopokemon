@@ -1,0 +1,54 @@
+<head>
+    <title>two pokemon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="box">
+        <div class="title">two pokemon</div><br>
+        <div class="pokemondiv">
+            <img class="pokemonimg" id="pk1">
+        </div>
+        <div class="pokemondiv">
+            <img class="pokemonimg" id="pk2">
+        </div>
+        <br>
+        <button onclick="loadImages();" class="button">MORE</button>
+    </div>
+        <script>
+        function randomPokemonNumber()
+        {
+            return 1 + Math.floor(Math.random() * 890);
+        }
+
+        var gameURLs = [
+            "swordshield/pokemon",
+            "sunmoon/pokemon"
+        ];
+
+        function imgBuilder(imgElement)
+        {
+            var pokedexEntry = randomPokemonNumber().toString();
+            while (pokedexEntry.length < 3) {
+                pokedexEntry = "0" + pokedexEntry;
+            }
+            var url = "https://serebii.net/"+gameURLs[0]+"/"+pokedexEntry+".png";
+
+            imgElement.addEventListener('error', function() {
+                var url = "https://serebii.net/"+gameURLs[1]+"/"+pokedexEntry+".png";
+                imgElement.src = url;
+            });
+
+            imgElement.src = url;
+            
+        }
+
+        function loadImages()
+        {
+            imgBuilder(document.getElementById('pk1'));
+            imgBuilder(document.getElementById('pk2'));
+        }
+
+        window.onload = loadImages;
+    </script>
+</body>

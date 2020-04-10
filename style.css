@@ -1,0 +1,28 @@
+
+div.pokemondiv {
+    display: inline;
+}
+img.pokemonimg {
+    width:30%;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+div.box {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    width:60%;
+}
+button.button {
+    margin-top:1em;
+    height:10%;
+    width:40%;
+    font-size: 2em;
+    font-family: 'Verdana';
+}
+span.title {
+    font-size: 3em;
+    font-family: 'Verdana';
+}
