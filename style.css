@@ -1,5 +1,6 @@
 body{
     background-color: purple;
+    font-family: "Comic Sans MS";
 }
 div.pokemondiv {
     display: inline;
@@ -10,6 +11,8 @@ img.pokemonimg {
     image-rendering: crisp-edges;
     image-rendering: pixelated;
     filter: drop-shadow(0px 5px 20px #000);
+    
+    transform: rotate(-1deg);
 }
 div.box {
     background-color: blueviolet;
@@ -21,22 +24,27 @@ div.box {
     width:60%;
     filter:drop-shadow(0px 0px 4px);
     border-radius: 10px;
+    transform: rotate(1deg);
 }
 button.button {
     margin-top:1em;
     height:10%;
     width:40%;
     font-size: 2em;
-    font-family: 'Verdana';
     background-color:pink;
-    border: 0px;
+    
+    font-family: "Comic Sans MS";
+/*     border: 0px; */
+    border-color: pink;
     border-radius:10px;
     filter:drop-shadow(0px 0px 5px pink);
+    transform: rotate(-1.5deg);
 }
 div.title {
     font-size: 3em;
-    font-family: 'Verdana';
+/*     font-family: 'Verdana'; */
     padding-bottom:.5em;
     color: darkgrey;
-    -webkit-text-stroke: 1px black;
+    transform: rotate(-1deg);
+/*     -webkit-text-stroke: 1px black; */
 }
