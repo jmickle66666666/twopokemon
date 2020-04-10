@@ -1,4 +1,6 @@
-
+body{
+    background-color: #874;
+}
 div.pokemondiv {
     display: inline;
 }
@@ -9,6 +11,8 @@ img.pokemonimg {
     image-rendering: pixelated;
 }
 div.box {
+    background-color: #985;
+    padding: 1%;
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
@@ -22,7 +26,8 @@ button.button {
     font-size: 2em;
     font-family: 'Verdana';
 }
-span.title {
+div.title {
     font-size: 3em;
     font-family: 'Verdana';
+    padding-bottom:.5em;
 }
